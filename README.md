@@ -20,7 +20,7 @@ Q | Enemy.
 - The map must be a rectangle surrounded by walls ‘1’.
 - It must have at least one exit ‘E’. And only one player ‘P’.
 
-*See some examples in the map_files folder of this project.*
+*See some examples in the `maps` folder of this project.*
  
 Use `WASD` or `← → ↑ ↓` to move. You move one tile at a time.
  
