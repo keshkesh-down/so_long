@@ -6,8 +6,9 @@
 ### How to play
 The game is able to play any map you want as long as it follow some specific rules:
 
-The map has to be a `.ber` file.
-It can only contain some of the following characters:
+- The map has to be a `.ber` file.
+- It can only contain some of the following characters:
+
 Character | Object
 ---|---
 1	| Wall.
