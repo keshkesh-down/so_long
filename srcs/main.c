@@ -34,7 +34,7 @@ int	main(int argc, char **argv)
 		handler_errors(1);
 	init_info(&info);
 	parse_map(argv[1], &info);
-	draw_menu(info);
+	// draw_menu(info);
 	info.win = mlx_new_window(info.mlx, info.width * SCALE, info.height * SCALE, TITLE);
 	find_portal(&info);
 	draw_game(&info);

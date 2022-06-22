@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sgendel <sgendel@student.42.fr>            +#+  +:+       +#+         #
+#    By: aleksejmironov <aleksejmironov@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/11 16:21:28 by sgendel           #+#    #+#              #
-#    Updated: 2022/04/22 23:14:32 by sgendel          ###   ########.fr        #
+#    Updated: 2022/06/19 23:47:14 by aleksejmiro      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ HEADER		=	includes/so_long.h
 
 # FLAGS		=	-Wall -Werror -Wextra
 
-LIBXF		=	-lmlx -framework OpenGL -framework AppKit
+LIBXF		=	mlx/libmlx.a -framework OpenGL -framework AppKit
 
 GREEN = \033[0;32m
 
@@ -50,7 +50,7 @@ $(NAME):	$(OBJ) $(HEADER)
 	@echo "so_long: $(GREEN)so long was created$(RESET)"
 # $(FLAGS)
 %.o: %.c	$(HEADER)
-	$(CC) $(FLAGS) -Imlx -c $< -o $@
+	$(CC) $(FLAGS) -I mlx -c $< -o $@
 
 clean:
 	@rm -f $(OBJ)
