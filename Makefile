@@ -6,7 +6,7 @@
 #    By: aleksejmironov <aleksejmironov@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/11 16:21:28 by sgendel           #+#    #+#              #
-#    Updated: 2022/06/19 23:47:14 by aleksejmiro      ###   ########.fr        #
+#    Updated: 2022/10/05 13:50:15 by aleksejmiro      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ HEADER		=	includes/so_long.h
 
 # FLAGS		=	-Wall -Werror -Wextra
 
-LIBXF		=	mlx/libmlx.a -framework OpenGL -framework AppKit
+LIBXF		=	minilibx/libmlx.a -framework OpenGL -framework AppKit
 
 GREEN = \033[0;32m
 

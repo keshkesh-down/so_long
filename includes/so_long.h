@@ -1,6 +1,6 @@
 #ifndef SO_LONG_H
 # define SO_LONG_H
-# include <mlx.h>
+# include "../minilibx/mlx.h"
 # include <fcntl.h> //open, close, read, write
 # include <stdio.h> //printf
 # include <stdlib.h> //malloc, free, perror, exit

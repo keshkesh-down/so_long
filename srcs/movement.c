@@ -6,8 +6,8 @@ void	draw_count_of_moves(t_info *info)
 
 	moves = ft_itoa(++info->moves);
 	draw_xpm_image(0, 15, FIELD, info);
-	mlx_string_put(info->mlx, info->win, 0, 15, 0xFFFFFFFF, "Count of steps:");
-	mlx_string_put(info->mlx, info->win, 150, 15, 0xFFFFFFFF, moves);
+	mlx_string_put(info->mlx, info->win, 0, 30, 0xFFFFFFFF, "Count of steps:");
+	mlx_string_put(info->mlx, info->win, 150, 30, 0xFFFFFFFF, moves);
 	free(moves);
 }
 

@@ -1,0 +1,22 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/aleksejmironov/Desktop/123'
+cc  -I mlx -c srcs/main.c -o srcs/main.o
+ 
+cc  -I mlx -c srcs/handler_of_errors.c -o srcs/handler_of_errors.o
+cc  -I mlx -c srcs/parse_map.c -o srcs/parse_map.o
+cc  -I mlx -c srcs/draw_game.c -o srcs/draw_game.o
+cc  -I mlx -c srcs/menu.c -o srcs/menu.o
+cc  -I mlx -c srcs/movement.c -o srcs/movement.o
+cc  -I mlx -c srcs/animations.c -o srcs/animations.o
+cc  -I mlx -c srcs/exit.c -o srcs/exit.o
+ 
+cc  -I mlx -c utils/ft_itoa.c -o utils/ft_itoa.o
+cc  -I mlx -c utils/get_next_line/get_next_line.c -o utils/get_next_line/get_next_line.o
+ 
+cc  -I mlx -c utils/get_next_line/get_next_line_utils.c -o utils/get_next_line/get_next_line_utils.o
+ 
+echo "\nso_long: \033[0;32mobject files were created\033[0m"
+cc  ./srcs/main.o  ./srcs/handler_of_errors.o  ./srcs/parse_map.o  ./srcs/draw_game.o  ./srcs/menu.o  ./srcs/movement.o  ./srcs/animations.o  ./srcs/exit.o  ./utils/ft_itoa.o  ./utils/get_next_line/get_next_line.o  ./utils/get_next_line/get_next_line_utils.o  minilibx/libmlx.a -framework OpenGL -framework AppKit -o ./so_long
+echo "so_long: \033[0;32mso long was created\033[0m"
+make: Leaving directory `/Users/aleksejmironov/Desktop/123'
+ 
